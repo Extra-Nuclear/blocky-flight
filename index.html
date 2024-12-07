@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blocky Flight</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2d3c4d;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0; /* Reduced padding to make room for logo */
+            position: relative;
+        }
+
+        /* Logo styling */
+        header .logo {
+            max-height: 200px; /* Adjust logo size */
+            margin-bottom: -50px; /* Add some space below the logo */
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        header h3 {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .game-description {
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin: 20px 0;
+            max-width: 700px;
+            margin: 0 auto;
+            color: #555;
+        }
+
+        h2 {
+            font-size: 2.2em;
+            color: #333;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-top: 20px;
+        }
+
+        ul li {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        h3 {
+            font-size: 1em;
+            margin-top: 6px;
+        }
+
+        .download-btn {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 30px;
+            text-decoration: none;
+            font-size: 1.1em;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .download-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .download-btn:active {
+            background-color: #1c6ea4;
+        }
+
+        /* Latest/Unstable (Alpha) button with white background and blue border */
+        .download-btn.latest {
+            background-color: #fff;
+            color: #3498db;
+            border: 2px solid #3498db; /* Blue border */
+        }
+
+        .download-btn.latest:hover {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .download-btn.latest:active {
+            background-color: #2980b9;
+            color: #fff;
+        }
+
+        .footer {
+            background-color: #1e2a38;
+            color: #fff;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .container {
+                width: 90%;
+            }
+
+            .download-btn {
+                font-size: 1.1em;
+                padding: 10px 30px;
+                margin-top: 15px;
+                margin-right: 0;
+            }
+        }
+
+        /* Center the download buttons */
+        .download-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .download-buttons .latest {
+            margin-left: 0px; /* Push the Latest button to the right */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Logo inside the header -->
+    <img src="Media/logo.png" alt="Blocky Flight Logo" class="logo">
+    <h1>Blocky Flight</h1>
+    <h3>The Flight of a Lifetime</h3>
+</header>
+
+<div class="container">
+    <h2>Game Overview</h2>
+    <p class="game-description">
+        "Blocky Flight" offers an immersive flight sim experience, blending breathtaking visuals, captivating storylines, and strategic gameplay.
+    </p>
+
+    <h2>Features</h2>
+    <ul>
+        <li>High-quality 3D graphics and fluid animations</li>
+        <li>Challenging puzzles and complex levels</li>
+        <li>Dynamic weather and day-night cycles</li>
+        <li>Multiplayer mode for an interactive experience</li>
+    </ul>
+
+    <h2>The Future?</h2>
+    <ul>
+        <p>Well, everything is still in a very early state, but:</p>
+        <li>New features and content updates coming soon!</li>
+        <li>Further optimizations for smooth gameplay</li>
+    </ul>
+
+    <!-- Download Buttons Section -->
+    <div class="download-buttons">
+        <a href="path/to/latest-stable.zip" class="download-btn" download>Download Latest (Stable)</a>
+        <a href="path/to/latest-alpha.zip" class="download-btn latest" download>Download Latest (Alpha)</a>
+    </div>
+
+</div>
+
+<footer class="footer">
+    <p>&copy; 2024 Nuclear Games. All Rights Reserved.</p>
+    <!-- <p>Follow us on <a href="https://twitter.com/awesomegame" target="_blank">Twitter</a> and <a href="https://www.facebook.com/awesomegame" target="_blank">Facebook</a>!</p> -->
+</footer>
+
+</body>
+</html>
